@@ -203,18 +203,6 @@ body {
     width: 100%;
 }
 
-.footer {
-    display: flex;
-    position: relative;
-    background-color: #c9b9a5;
-    width: 100vw;
-    justify-content: center;
-}
-
-.space {
-    height: 43%
-}
-
 .nomobile {
     display: none;
 }
@@ -253,5 +241,9 @@ body {
     bottom: 0;
     rotate: -50deg;
     z-index: 998;
-    transform: translateY(60%)
+    transform: translateY(60%);
+}
+
+#clickondarwin {
+    font-size: 60%;
 }
