@@ -204,8 +204,39 @@ body {
     background-color: #c9b9a5;
     width: 100vw;
     justify-content: center;
+    box-shadow: 0px 10px 10px 10px black;
 }
 
 .space {
     height: 43%
+}
+
+.nomobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .nomobile {
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ebe0d2;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 5vh
+    }
+    .nomobile-img {
+        position: fixed;
+        width: 60vh;
+        align-self:baseline;
+    }
+    .nomobile img {
+        width: 100%
+    }
+    body {
+        overflow: hidden;
+    }
 }
