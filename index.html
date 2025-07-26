@@ -10,9 +10,6 @@
     <title>Potaaato</title>
 </head>
 <body>
-    <div class="nomobile"> <!--Sorry making a responsive site is sooooo hard lol-->
-        <h2>Sorry, this website is not adaptated to mobile/little screens yet.</h2>
-    </div>
     <div class="darwin">
         <a href="/remote.html">
             <img src="/assets/img/darwin.webp" alt="Darwin">
@@ -21,7 +18,7 @@
     <div class="head">
         <img src="/assets/img/potaaato.webp" alt="My PFP">
         <div class="bio">
-            <p>Hey ! I'm Diego, under the nickname of Potaaato 🥔. I'm a 14 years old french dev <i>(click here for more info)</i>, and i like to do some nerdy stuff like networking, electronics <i>(esp32 projects 🗿)</i> and stuff like that.</p>
+            <span>Hey ! I'm Diego, under the nickname of Potaaato 🥔. I'm a 14 years old french dev <i>(click here for more info)</i><button id="bioseemorebtn">See more...</button><span id="partofthebio">, and i like to do some nerdy stuff like networking, electronics <i>(esp32 projects 🗿)</i> and stuff like that.</span></span>
         </div>
         <div class="socials">
             <a href="https://github.com/potaaatoo" target="_blank" aria-label="My GitHub profile">
@@ -34,7 +31,7 @@
                 <i class="fa-solid fa-envelope"></i>
             </a>
         </div>
-        <h3>My Skills:</h3>
+        <h3 id="h2myskills">My Skills:</h3>
         <div class="skills">
             <i class="fa-brands fa-css3-alt skillfloat1"></i>
             <i class="fa-brands fa-html5 skillfloat2"></i>
@@ -51,7 +48,7 @@
     </a>
     </div>
     <hr>
-    <div id="projects"> <!-- Just realised that ts is absolutely not responsive ☠️ -->
+    <div id="projects">
         <div class="tile">
             <img src="/assets/img/oops.webp" alt="I have no public project yet." loading="lazy">
             <h2>Oops...</h2>

@@ -1,6 +1,6 @@
 body {
     background-color: #ebe0d2;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     font-weight:bold;
     text-align: center;
@@ -21,6 +21,7 @@ body {
 }
 
 .bio {
+    display: flex;
     margin-top: 10px;
     width : 70%;
 }
@@ -116,24 +117,6 @@ body {
     display: none;
 }
 
-@media (max-width: 600px) {
-    .nomobile {
-        display: flex;
-        position: fixed;
-        z-index: 999;
-        width: 100vw;
-        height: 100vh;
-        background-color: #ebe0d2;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        font-size: 150%
-    }
-    body {
-        overflow: hidden;
-    }
-}
-
 .darwin {
     position: fixed;
     right: 0;
@@ -155,4 +138,53 @@ body {
 
 #clickondarwin {
     font-size: 60%;
+}
+
+#bioseemorebtn {
+    display: none;
+}
+
+@media (max-height: 600px) {
+    .scrolldown {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .head {
+        display: flex;
+        justify-content: center;
+    }
+    .scrolldown {
+        display: none;
+    }
+    .tile {
+        width: 50vw;
+    }
+    #clickondarwin {
+        display: none;
+    }
+    .darwin {
+        display: none;
+    }
+}
+
+@media (max-height: 480px) {
+    .skills {
+        display: none;
+    }
+    #h2myskills {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #partofthebio {
+        display: none;
+    }
+    #bioseemorebtn {
+        display: inline;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
 }
