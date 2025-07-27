@@ -1,6 +1,6 @@
 body {
     background-color: #ebe0d2;
-    overflow-x: hidden !important;
+    overflow-x: clip !important;
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -97,6 +97,49 @@ body {
     color: #001324;
 }
 
+.scrolldown:hover {
+    animation: 1s bump;
+}
+
+@keyframes bump {
+    0% {
+        transform: translateY(0px)
+    }
+    10% {
+        transform: translateY(-8px)
+    }
+    20% {
+        transform: translateY(-0px)
+    }
+    30% {
+        transform: translateY(-4px)
+    }
+    40% {
+        transform: translateY(-0px)
+    }
+    40% {
+        transform: translateY(-3px)
+    }
+    50% {
+        transform: translateY(-0px)
+    }
+    60% {
+        transform: translateY(-2px)
+    }
+    70% {
+        transform: translateY(-0px)
+    }
+    80% {
+        transform: translateY(-1px)
+    }
+    90% {
+        transform: translateY(-0px)
+    }
+    100% {
+        transform: translateY(-0.5px)
+    }
+}
+
 #projects {
     display: flex;
     width: 100vw;
@@ -178,6 +221,13 @@ body {
     }
 }
 
+@media (min-height: 800px) {
+    .head {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 600px) {
     #partofthebio {
         display: none;
@@ -187,4 +237,228 @@ body {
         margin-bottom: 5px;
         margin-left: 5px;
     }
+}
+
+@media (max-width: 380px) {
+    .skills {
+        display: grid;
+        grid-template: 150px / auto auto auto
+    }
+    .wired {
+        position: absolute;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+#skilllevel {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.skillgraph {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.fahtml5skill,
+.fajsskill,
+.fadockerskill,
+.fagithubskill,
+.facliskill,
+.fanetworkingskill,
+.faelectronicsskill,
+.facss3skill {
+    display: inline;
+    margin-right: 4px;
+}
+
+.skillhtml,
+.skilljs,
+.skilldocker,
+.skillgithub,
+.skillcli,
+.skillnetworking,
+.skillelectronics,
+.skillcss {
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.skillgraphhtml,
+.skillgraphjs,
+.skillgraphdocker,
+.skillgraphgithub,
+.skillgraphnetworking,
+.skillgraphelectronics,
+.skillgraphcli,
+.skillgraphcss {
+    background-color: #fff;
+    width: 30vw;
+    height: 3vh;
+    border-radius: 8px;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.skillgraphhtmlcontent {
+    background-color: #001324;
+    width: 28vw;
+    height: 3vh;
+    border-radius: 8px;
+}
+
+.skillgraphcsscontent {
+    background-color: #001324;
+    width: 20vw;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.skillgraphjscontent {
+    background-color: #001324;
+    width: 8vw;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.skillgraphdockercontent {
+    background-color: #001324;
+    width: 23vw;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.skillgraphgithubcontent {
+    background-color: #001324;
+    width: 20vw;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.skillgraphclicontent {
+    background-color: #001324;
+    width: 23vw;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.skillgraphelectronicscontent {
+    background-color: #001324;
+    width: 17vw;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.skillgraphnetworkingcontent {
+    background-color: #001324;
+    width: 22vw;
+    height: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 450px) {
+    .skillhtml,
+    .skilljs,
+    .skilldocker,
+    .skillgithub,
+    .skillcli,
+    .skillnetworking,
+    .skillelectronics,
+    .skillcss {
+        margin-bottom: 18px;
+        font-size: 2.5vh;
+    }
+
+    .skillgraphhtml,
+    .skillgraphjs,
+    .skillgraphdocker,
+    .skillgraphgithub,
+    .skillgraphnetworking,
+    .skillgraphelectronics,
+    .skillgraphcli,
+    .skillgraphcss {
+        background-color: #fff;
+        width: 50vw;
+        height: 2vh;
+        border-radius: 8px;
+        margin-left: 1rem;
+        overflow: hidden;
+    }
+    .skillgraphhtmlcontent {
+        width: 46.67vw;
+    }
+
+    .skillgraphcsscontent {
+        width: 33.33vw;
+    }
+
+    .skillgraphjscontent {
+        width: 13.33vw;
+    }
+
+    .skillgraphdockercontent {
+        width: 38.33vw;
+    }
+
+    .skillgraphgithubcontent {
+        width: 33.33vw;
+    }
+
+    .skillgraphclicontent {
+        width: 38.33vw;
+    }
+
+    .skillgraphelectronicscontent {
+        width: 28.33vw;
+    }
+
+    .skillgraphnetworkingcontent {
+        width: 36.67vw;
+    }
+}
+
+.skill {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.spanlabel {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  color: #ffffff;
+  padding: 8px;
+  font-size: 3vh;
+  backdrop-filter: blur(2px) saturate(200%);
+  -webkit-backdrop-filter: blur(2px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  text-shadow:
+    0 0 10px rgb(133, 131, 131),
+    0 0 10px rgb(133, 131, 131),
+    0 0 10px rgb(133, 131, 131),
+    0 0 10px rgb(133, 131, 131);
+}
+
+.skill:hover .spanlabel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
 }

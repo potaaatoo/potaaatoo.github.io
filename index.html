@@ -18,7 +18,7 @@
     <div class="head">
         <img src="/assets/img/potaaato.webp" alt="My PFP">
         <div class="bio">
-            <span>Hey ! I'm Diego, under the nickname of Potaaato 🥔. I'm a 14 years old french dev <i>(click here for more info)</i><button id="bioseemorebtn">See more...</button><span id="partofthebio">, and i like to do some nerdy stuff like networking, electronics <i>(esp32 projects 🗿)</i> and stuff like that.</span></span>
+            <span>Hey ! I'm Diego, under the nickname of Potaaato 🥔. I'm a 14 years old french dev <i>(click <a href="#skilllevel">here</a> for more info)</i><button id="bioseemorebtn">See more...</button><span id="partofthebio">, and i like to do some nerdy stuff like networking, electronics <i>(esp32 projects 🗿)</i> and stuff like that.</span></span>
         </div>
         <div class="socials">
             <a href="https://github.com/potaaatoo" target="_blank" aria-label="My GitHub profile">
@@ -33,13 +33,34 @@
         </div>
         <h3 id="h2myskills">My Skills:</h3>
         <div class="skills">
-            <i class="fa-brands fa-css3-alt skillfloat1"></i>
-            <i class="fa-brands fa-html5 skillfloat2"></i>
-            <i class="fa-brands fa-docker skillfloat1"></i>
-            <i class="fa-brands fa-github skillfloat2"></i>
-            <i class="fa-solid fa-terminal skillfloat1"></i>
-            <i class="fa-solid fa-microchip skillfloat2"></i>
-            <i class="fa-solid fa-network-wired skillfloat1"></i>
+            <div class="skill skillfloat1">
+                <i class="fa-brands fa-css3-alt css"></i>
+                <span class="spancss spanlabel">CSS</span>
+            </div>
+            <div class="skill skillfloat2">
+                <i class="fa-brands fa-html5"></i>
+                <span class="spanhtml spanlabel">HTML</span>
+            </div>
+            <div class="skill skillfloat1">
+                <i class="fa-brands fa-docker"></i>
+                <span class="spandocker spanlabel">Docker</span>
+            </div>
+            <div class="skill skillfloat2">
+                <i class="fa-brands fa-github"></i>
+                <span class="spangithub spanlabel">GitHub</span>
+            </div>
+            <div class="skill skillfloat1">
+                <i class="fa-solid fa-terminal"></i>
+                <span class="spancli spanlabel">CLI</span>
+            </div>
+            <div class="skill skillfloat2">
+                <i class="fa-solid fa-microchip"></i>
+                <span class="spanelectronics spanlabel">Electronics</span>
+            </div>
+            <div class="skill skillfloat1">
+                <i class="fa-solid fa-network-wired wired"></i>
+                <span class="spannetworking spanlabel">Networking</span>
+            </div>
         </div>
     </div>
     <a href="#projects" aria-label="Go to my projects">
@@ -54,6 +75,68 @@
             <h2>Oops...</h2>
             <p>It seems that I have no cool public project to show here yet.</p>
             <p id="clickondarwin">But you may find something by clicking on Darwin in the right corner of the page 👀</p>
+        </div>
+    </div>
+    <hr>
+    <div id="skilllevel">
+        <h2>Skill Level</h2>
+        <div class="skillgraph">
+            <div class="skillhtml">
+                <i class="fa-brands fa-html5 fahtml5skill"></i>
+                <span>Html</span>
+                <div class="skillgraphhtml">
+                    <div class="skillgraphhtmlcontent"></div>
+                </div>
+            </div>
+            <div class="skillcss">
+                <i class="fa-brands fa-html5 facss3skill"></i>
+                <span>Css</span>
+                <div class="skillgraphcss">
+                    <div class="skillgraphcsscontent"></div>
+                </div>
+            </div>
+            <div class="skilljs">
+                <i class="fab fa-js fajsskill"></i>
+                <span>Js</span>
+                <div class="skillgraphjs">
+                    <div class="skillgraphjscontent"></div>
+                </div>
+            </div>
+            <div class="skilldocker">
+                <i class="fa-brands fa-docker fadockerskill"></i>
+                <span>Docker</span>
+                <div class="skillgraphdocker">
+                    <div class="skillgraphdockercontent"></div>
+                </div>
+            </div>
+            <div class="skillgithub">
+                <i class="fa-brands fa-github fagithubskill"></i>
+                <span>GitHub</span>
+                <div class="skillgraphgithub">
+                    <div class="skillgraphgithubcontent"></div>
+                </div>
+            </div>
+            <div class="skillcli">
+                <i class="fa-solid fa-terminal facliskill"></i>
+                <span>CLI</span>
+                <div class="skillgraphcli">
+                    <div class="skillgraphclicontent"></div>
+                </div>
+            </div>
+            <div class="skillelectronics">
+                <i class="fa-solid fa-microchip faelectronicsskill"></i>
+                <span>Elec.</span>
+                <div class="skillgraphelectronics">
+                    <div class="skillgraphelectronicscontent"></div>
+                </div>
+            </div>
+            <div class="skillnetworking">
+                <i class="fa-solid fa-network-wired fanetworkingskill"></i>
+                <span>Net.</span>
+                <div class="skillgraphnetworking">
+                    <div class="skillgraphnetworkingcontent"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
